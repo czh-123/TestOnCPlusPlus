@@ -5,6 +5,8 @@
 
 using namespace std;
 
+// Todo 看下pair的实现 以及 完美转发  
+// Todo 实现下 map 自定义Class 指定 < 的几种方法
 class Key {
 public:
     Key () {
@@ -71,6 +73,7 @@ int main() {
     // map内使用pair 并且stl会在插入时在堆上构建节点 当没有move时，会进行copy assign，
     // 开销是 构造函数 + 构建pair时的copy/move assign + 插入的copy / move assign
     // [] 省了自己构建pair的开销
+    
     // Todo 看下pair的实现 以及 完美转发  
 
 }
